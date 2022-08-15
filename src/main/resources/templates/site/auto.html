@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <p>成功登录！欢迎您，<span style="color:orange;" th:text="${username}"></span></p>
+
+    <form action="/my-handling-form-page" method="post" th:action="@{/login}>">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username" th:value="${param.username}"/>
+            </li>
+            <li>
+                <label for="name">Number:</label>
+                <input type="text" id="number" name="number"  th:value="${param.number}/>">
+            </li>
+
+            <li class="button">
+                <button type="submit">自动化创建</button>
+            </ul>
+
+    </form>
+
+
+
+
+</body>
+</html>

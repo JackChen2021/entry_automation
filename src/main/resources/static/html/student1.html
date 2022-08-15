@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增加学生</title>
+</head>
+<body>
+<!--action:表示要将表单提交到哪个页面，不用写.html后缀-->
+<!--由于是静态html页面，故不用引入thymeleaf命名空间-->
+<form method="post" action="/community/student">
+    <p>
+        姓名：<input type="text" name="name">
+    </p>
+    <p>
+        年龄：<input type="text" name="age">
+    </p>
+    <p>
+        <input type="submit" value="保存">
+    </p>
+</form>
+</body>
+</html>
